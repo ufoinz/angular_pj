@@ -1,0 +1,42 @@
+.row {
+    border: 1px solid var(--light-colour );
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.display {
+    border: 3px solid var(--light-colour );
+    padding: 32px 24px;
+    font-size: 25px;
+}
+
+.btn {
+    font-size: 25px;
+    border: none;
+    background: var(--gray-colour);
+    color: var(--dark-colour);
+    padding: 30px 20px;
+    line-height: 30px;
+}
+
+.btn2 {
+    font-size: 25px;
+    border: none;
+    background: darkgray;
+    color: var(--dark-colour);
+    padding: 30px 20px;
+    line-height: 30px;
+}
+
+.btn3 {
+    font-size: 25px;
+    border: none;
+    background: rgb(158, 98, 155);
+    color: var(--dark-colour);
+    padding: 30px 20px;
+    line-height: 30px;
+}
