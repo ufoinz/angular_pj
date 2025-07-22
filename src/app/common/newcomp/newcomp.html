@@ -1,6 +1,5 @@
-
 <div class="display">
-       
+       <input type="text" class="form-control size mb-3 text-right" [value]="display" readonly>
 </div>
 
 <div class="row">
@@ -12,11 +11,11 @@
         <strong>CE</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn" (click)="clear()">
         <strong>C</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn"  (click)="clearlast()">
         <strong>⌫</strong>
     </button>
 </div>
@@ -26,7 +25,7 @@
         <strong>1∕x</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn" >
         <strong>х²</strong>
     </button>
 
@@ -34,61 +33,61 @@
         <strong>√</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn" (click)="appendInput('/')">
         <strong>÷</strong>
     </button>
 </div>
 
 <div class="row">
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('7')">
         <strong>7</strong>
     </button>
 
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('8')">
         <strong>8</strong>
     </button>
 
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('9')">
         <strong>9</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn" (click)="appendInput('*')">
         <strong>×</strong>
     </button>
 </div>
 
 <div class="row">
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('4')">
         <strong>4</strong>
     </button>
 
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('5')">
         <strong>5</strong>
     </button>
 
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('6')">
         <strong>6</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn" (click)="appendInput('-')">
         <strong>-</strong>
     </button>
 </div>
 
 <div class="row">
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('1')">
         <strong>1</strong>
     </button>
 
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('2')">
         <strong>2</strong>
     </button>
 
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('3')">
         <strong>3</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn" (click)="appendInput('+')">
         <strong>+</strong>
     </button>
 </div>
@@ -98,15 +97,15 @@
         <strong>+∕-</strong>
     </button>
 
-    <button class="btn2">
+    <button class="btn2" (click)="appendInput('0')">
         <strong>0</strong>
     </button>
 
-    <button class="btn">
+    <button class="btn" (click)="appendInput('.')">
         <strong>,</strong>
     </button>
 
-    <button class="btn3">
+    <button class="btn3" (click)="calculate()">
         <strong>=</strong>
     </button>
 </div>
